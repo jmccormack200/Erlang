@@ -1,5 +1,5 @@
 -module(what_the_if).
--export([heh_fine/0,oh_god/1,help_me/1]).
+-export([heh_fine/0,oh_god/1,help_me/1, insert/2]).
 
 heh_fine() ->
 	if 1 =:= 1 ->
@@ -25,3 +25,12 @@ help_me(Animal) ->
 		true -> "NOT AN ANIMAL"
 	end,
 	{Animal, "says" ++ Talk ++ "!"}.
+
+insert(X, []) ->
+	[X];
+
+insert(X,Set) ->
+	case lists:member(X,Set) of
+		true -> Set;
+		false -> [X|Set]
+	end.
