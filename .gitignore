@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .eunit
 deps
 *.o
@@ -8,3 +9,22 @@ ebin
 rel/example_project
 .concrete/DEV_MODE
 .rebar
+=======
+ebin/*.beam
+ebin/boss.app
+*.beam
+deps
+erl_crash.dump
+*~
+#*#
+.*#
+*#
+.eunit
+src/boss/*.dtl.erl
+*.sw?
+.rebar
+plt/
+/.project
+/.settings/
+/ebin/
+>>>>>>> d30d802669a03a6d34b24d4b7c61f68013281bec
