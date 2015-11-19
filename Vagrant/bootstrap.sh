@@ -13,9 +13,9 @@ apt-get --yes --force-yes  install build-essential m4 libncurses5-dev libssh-dev
 #  else
 	mkdir -p /usr/src/erlang
 	cd /usr/src/erlang
-	wget www.erlang.org/download/otp_src_R18.0.tar.gz
-	tar -xvzf otp_src_R18.0.tar.gz
-	cd otp_src_R18.0
+	wget www.erlang.org/download/otp_src_18.0.tar.gz
+	tar -xvzf otp_src_18.0.tar.gz
+	cd otp_src_18.0
 	./configure
 	make
 	make install
