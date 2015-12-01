@@ -1,1 +1,1 @@
-{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/john/Learning/Erlang/Vagrant","disabled":false}}}
+{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/john/Learning/Erlang/Vagrant","disabled":false},"/home/vagrant/chicagoboss":{"guestpath":"/home/vagrant/chicagoboss","hostpath":"/home/john/Learning/Erlang/VagrantCB","disabled":false}}}
