@@ -21,7 +21,7 @@ apt-get --yes --force-yes  install build-essential m4 libncurses5-dev libssh-dev
 	make install
 #fi
 
-if [-d /home/vagrant/chicagobos/ChicagoBoss ]; then
+if [-d /home/vagrant/chicagoboss/ChicagoBoss ]; then
 	echo "ChicagoBoss present, skipping installation."
 else
 	echo "Installing now"
