@@ -1,0 +1,18 @@
+2015-12-15 19:29:55.616 [notice] <0.64.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-12-15 19:29:56.936 [info] <0.7.0> Application lager started on node 'cb_tutorial@vagrant-ubuntu-trusty-64'
+2015-12-15 19:29:57.013 [info] <0.7.0> Application crypto started on node 'cb_tutorial@vagrant-ubuntu-trusty-64'
+2015-12-15 19:29:57.083 [info] <0.7.0> Application mimetypes started on node 'cb_tutorial@vagrant-ubuntu-trusty-64'
+2015-12-15 19:29:57.331 [info] <0.96.0>@boss_web_controller_init:init_services:132 Starting Boss in development mode...
+2015-12-15 19:29:57.383 [info] <0.96.0>@boss_db:start:77 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-12-15 19:29:57.764 [info] <0.7.0> Application tinymq started on node 'cb_tutorial@vagrant-ubuntu-trusty-64'
+2015-12-15 19:29:57.999 [info] <0.7.0> Application ranch started on node 'cb_tutorial@vagrant-ubuntu-trusty-64'
+2015-12-15 19:29:58.025 [info] <0.7.0> Application cowlib started on node 'cb_tutorial@vagrant-ubuntu-trusty-64'
+2015-12-15 19:29:58.159 [info] <0.7.0> Application cowboy started on node 'cb_tutorial@vagrant-ubuntu-trusty-64'
+2015-12-15 19:29:58.867 [notice] <0.96.0>@boss_compiler:compile:47 Compile file "/home/vagrant/chicagoboss/cb_tutorial/src/mail/cb_tutorial_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/vagrant/chicagoboss/cb_tutorial/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-15 19:29:59.076 [notice] <0.96.0>@boss_compiler:compile:47 Compile file "/home/vagrant/chicagoboss/cb_tutorial/src/mail/cb_tutorial_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/vagrant/chicagoboss/cb_tutorial/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-15 19:29:59.150 [notice] <0.96.0>@boss_compiler:compile:47 Compile file "/home/vagrant/chicagoboss/cb_tutorial/src/view/lib/tag_modules/cb_tutorial_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/vagrant/chicagoboss/cb_tutorial/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-15 19:29:59.227 [notice] <0.96.0>@boss_compiler:compile:47 Compile file "/home/vagrant/chicagoboss/cb_tutorial/src/view/lib/filter_modules/cb_tutorial_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/vagrant/chicagoboss/cb_tutorial/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-15 19:29:59.682 [notice] <0.96.0>@boss_compiler:compile:47 Compile file "/home/vagrant/chicagoboss/cb_tutorial/priv/init/cb_tutorial_01_news.erl" with options [{include_dirs,["/home/vagrant/chicagoboss/cb_tutorial/include"]}] 
+2015-12-15 19:31:27.858 [info] <0.277.0>@boss_controller_compiler:compile:71 Compile controller /home/vagrant/chicagoboss/cb_tutorial/src/controller/cb_tutorial_greeting_controller.erl
+2015-12-15 19:31:27.858 [notice] <0.277.0>@boss_compiler:compile:47 Compile file "/home/vagrant/chicagoboss/cb_tutorial/src/controller/cb_tutorial_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/vagrant/chicagoboss/cb_tutorial/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-15 19:31:27.970 [info] <0.277.0>@boss_web_controller_handle_request:log_status_code:187 GET /greeting/hello [cb_tutorial] 200 251ms
