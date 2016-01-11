@@ -9,21 +9,21 @@
 
 what_looks_like_assignment_might_not_be() ->
     Fruits = apple,
-    Fruits = __.
+    Fruits = apple.
 
 assignment_with_a_tuple() ->
     {X, Y} = {banana, apple},
-    (X =:= __) and (Y =:= apple).
+    (X =:= banana) and (Y =:= apple).
 
 branching_on_patterns() ->
     Fruits = {banana, apple},
     case Fruits of
         {banana, Item} ->
-            __ =:= Item
+            apple =:= Item
     end.
 
 sometimes_we_do_not_need_to_know_everything() ->
-    Fruits = {__, banana},
+    Fruits = {apple, banana},
     case Fruits of
         {apple, _} ->
             get_here
@@ -36,10 +36,10 @@ and_sometimes_we_dont_need_to_match_anything() ->
         _ ->
             Answer = anything
     end,
-    __ =:= Answer.
+    anything =:= Answer.
 
 we_can_find_patterns_in_arguments() ->
-    match_the_argument(__).
+    match_the_argument(bar).
 
 match_the_argument(foo) ->
     wrong;
