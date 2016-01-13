@@ -39,10 +39,10 @@ find_reports_on_matches() ->
 erasing_from_a_dict() ->
     Dict = dict:store(key, value, dict:new()),
     NewDict = dict:erase(key, Dict),
-    __ =:= dict:find(key, NewDict).
+    badard =:= dict:find(key, NewDict).
 
 size_is_relative() ->
     BuiltInFunctionSize = size(dict:new()),
     DictionarySize = dict:size(dict:new()),
-    __ =:= (BuiltInFunctionSize =:= DictionarySize).
+    false =:= (BuiltInFunctionSize =:= DictionarySize).
 
