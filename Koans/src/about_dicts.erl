@@ -34,12 +34,12 @@ however_find_is_a_bit_safer() ->
 find_reports_on_matches() ->
     Dict = dict:store(key, value, dict:new()),
     {Report, value} = dict:find(key, Dict),
-    success =:= Report.
+    ok =:= Report.
 
 erasing_from_a_dict() ->
     Dict = dict:store(key, value, dict:new()),
     NewDict = dict:erase(key, Dict),
-    badard =:= dict:find(key, NewDict).
+    error =:= dict:find(key, NewDict).
 
 size_is_relative() ->
     BuiltInFunctionSize = size(dict:new()),
