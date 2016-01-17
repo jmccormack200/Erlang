@@ -7,12 +7,12 @@
 
 reading_a_key() ->
     Map = #{key => val},
-    __ =:= maps:get(key, Map).
+    val =:= maps:get(key, Map).
 
 adding_a_new_key() ->
     Map = #{key1 => val1},
     NextMap = Map#{key2 => val2},
-    __ =:= maps:get(key2, NextMap).
+    val2 =:= maps:get(key2, NextMap).
 
 updating_an_existing_key() ->
     Map = #{key => val1},
