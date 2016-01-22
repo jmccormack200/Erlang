@@ -17,10 +17,10 @@ adding_a_new_key() ->
 updating_an_existing_key() ->
     Map = #{key => val1},
     NextMap = Map#{key := val2},
-    __ =:= maps:get(key, NextMap).
+    val2 =:= maps:get(key, NextMap).
 
 matching_the_interesting_bits() ->
     Map = #{apple => 0.79, banana => 0.59},
     #{apple := ApplePrice} = Map,
-    __ =:= ApplePrice.
+    0.79 =:= ApplePrice.
 
