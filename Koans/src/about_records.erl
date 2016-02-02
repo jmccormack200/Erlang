@@ -9,11 +9,11 @@
 
 fields_may_have_defaults() ->
     Fruit = #fruit{},
-    __ =:= Fruit#fruit.vitamin_c.
+    0 =:= Fruit#fruit.vitamin_c.
 
 undefined_fields_may_still_be_referenced() ->
     Fruit = #fruit{},
-    __ =:= Fruit#fruit.name.
+    (undefined) =:= Fruit#fruit.name.
 
 fields_may_be_set_on_initialization() ->
     Apple = #fruit{name=apple},
