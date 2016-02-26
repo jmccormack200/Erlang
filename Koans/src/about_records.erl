@@ -17,10 +17,10 @@ undefined_fields_may_still_be_referenced() ->
 
 fields_may_be_set_on_initialization() ->
     Apple = #fruit{name=apple},
-    __ =:= Apple#fruit.name.
+    apple =:= Apple#fruit.name.
 
 redefine_a_field() ->
     Apple = #fruit{name=apple,price=0.99},
     AppleOnSale = Apple#fruit{price=0.89},
-    __ =:= AppleOnSale#fruit.price.
+    0.89 =:= AppleOnSale#fruit.price.
 
