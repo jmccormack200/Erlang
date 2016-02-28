@@ -8,16 +8,16 @@
         ]).
 
 map_a_list_to_a_new_list() ->
-    __ =:= lists:map(fun(Item) -> Item * 2 end, [1, 2, 3]).
+    [2,4,6] =:= lists:map(fun(Item) -> Item * 2 end, [1, 2, 3]).
 
 fold_an_answer_from_the_left() ->
-    __ =:= lists:foldl(
+   "hello erlang koans" =:= lists:foldl(
              fun(Item, Accumulation) ->
                  string:join([Accumulation, Item], " ")
              end, "hello", ["erlang", "koans"]).
 
 or_from_the_right() ->
-    __ =:= lists:foldr(
+   __ =:= lists:foldr(
              fun(Item, Accumulation) ->
                  string:join([Accumulation, Item], " ")
              end, "hello", ["erlang", "koans"]).
