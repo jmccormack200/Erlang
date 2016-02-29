@@ -17,13 +17,13 @@ fold_an_answer_from_the_left() ->
              end, "hello", ["erlang", "koans"]).
 
 or_from_the_right() ->
-   __ =:= lists:foldr(
+  "hello koans erlang" =:= lists:foldr(
              fun(Item, Accumulation) ->
                  string:join([Accumulation, Item], " ")
              end, "hello", ["erlang", "koans"]).
 
 filter_the_appropriate_values() ->
-    __ =:= lists:filter(fun(Item) -> Item rem 2 =:= 0 end, [2, 3, 4]).
+    [2,4] =:= lists:filter(fun(Item) -> Item rem 2 =:= 0 end, [2, 3, 4]).
 
 merging_two_dicts() ->
     Dict1 = dict:store(key, first_value, dict:new()),
