@@ -29,7 +29,7 @@ merging_two_dicts() ->
     Dict1 = dict:store(key, first_value, dict:new()),
     Dict2 = dict:store(key, second_value, dict:new()),
     NewDict = dict:merge(fun(Key, Value1, Value2) -> [Value1, Value2] end, Dict1, Dict2),
-    dict:store(key, __, dict:new()) =:= NewDict.
+    dict:store(key, [first_value, second_value], dict:new()) =:= NewDict.
 
 function_passed_to_a_function() ->
     YourListReversalFunction = __,
