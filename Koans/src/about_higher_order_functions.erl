@@ -32,7 +32,7 @@ merging_two_dicts() ->
     dict:store(key, [first_value, second_value], dict:new()) =:= NewDict.
 
 function_passed_to_a_function() ->
-    YourListReversalFunction = __,
+    YourListReversalFunction = fun(fruit_list) -> (list:reverse(fruit_list)) end,
     mango =:= first_of_applied_function(YourListReversalFunction).
 
 first_of_applied_function(YourFunction) when is_function(YourFunction) ->
