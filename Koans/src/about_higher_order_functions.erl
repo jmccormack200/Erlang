@@ -35,6 +35,8 @@ function_passed_to_a_function() ->
     YourListReversalFunction = fun(fruit_list) -> (list:reverse(fruit_list)) end,
     mango =:= first_of_applied_function(YourListReversalFunction).
 
+%% Current error is with the is_function check
+
 first_of_applied_function(YourFunction) when is_function(YourFunction) ->
     lists:nth(1, YourFunction([apple, banana, mango]));
 first_of_applied_function(_) ->
