@@ -32,7 +32,7 @@ merging_two_dicts() ->
     dict:store(key, [first_value, second_value], dict:new()) =:= NewDict.
 
 function_passed_to_a_function() ->
-    YourListReversalFunction = fun(fruit_list) -> (list:reverse(fruit_list)) end,
+    YourListReversalFunction = fun(fruit_list) -> list:reverse(fruit_list) end;
     mango =:= first_of_applied_function(YourListReversalFunction).
 
 %% Current error is with the is_function check
