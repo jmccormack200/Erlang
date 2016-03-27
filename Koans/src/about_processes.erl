@@ -5,7 +5,7 @@
         ]).
 
 writing_messages_to_yourself() ->
-    self() ! __,
+    self() ! "Hello Self!",
     receive
         Message ->
           Message =:= "Hello Self!"
