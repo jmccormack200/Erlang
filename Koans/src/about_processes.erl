@@ -36,5 +36,5 @@ keeping_an_eye_on_your_friends() ->
         {'EXIT', _, Message} ->
             Message
     end,
-    __ =:= EndMessage.
+    "Goodbye!" =:= EndMessage.
 
