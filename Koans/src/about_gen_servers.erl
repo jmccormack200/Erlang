@@ -14,7 +14,7 @@
 
 one_may_send_synchronous_messages() ->
     {ok, ServerPid} = gen_server:start(?MODULE, [], []),
-    Result = count =:= gen_server:call(ServerPid, count),
+    Result = 0  =:= gen_server:call(ServerPid, count),
     gen_server:cast(ServerPid, stop),
     Result.
 
