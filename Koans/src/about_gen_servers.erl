@@ -22,7 +22,7 @@ one_may_also_send_asynchronous_messages() ->
     {ok, ServerPid} = gen_server:start(?MODULE, [], []),
     gen_server:cast(ServerPid, inc),
     gen_server:cast(ServerPid, inc),
-    Result = __ =:= gen_server:call(ServerPid, count),
+    Result = 2 =:= gen_server:call(ServerPid, count),
     gen_server:cast(ServerPid, stop),
     Result.
 
@@ -30,7 +30,7 @@ act_upon_all_messages() ->
     {ok, ServerPid} = gen_server:start(?MODULE, [], []),
     gen_server:cast(ServerPid, inc),
     ServerPid ! reset,
-    Result = __ =:= gen_server:call(ServerPid, count),
+    Result = 0 =:= gen_server:call(ServerPid, count),
     gen_server:cast(ServerPid, stop),
     Result.
 
