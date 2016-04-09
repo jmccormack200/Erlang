@@ -16,13 +16,13 @@
 
 initial_state_is_set_in_init() ->
     {ok, FsmPid} = gen_fsm:start(?MODULE, 0, []),
-    Result = __ =:= gen_fsm:sync_send_event(FsmPid, {button, "Coke"}),
+    Result =  "You still owe 125" =:= gen_fsm:sync_send_event(FsmPid, {button, "Coke"}),
     gen_fsm:send_all_state_event(FsmPid, stop),
     Result.
 
 some_actions_will_not_trigger_a_state_change() ->
     {ok, FsmPid} = gen_fsm:start(?MODULE, 0, []),
-    Result = __ =:= gen_fsm:sync_send_event(FsmPid, {coin, 25}),
+    Result = "You still owe 100" =:= gen_fsm:sync_send_event(FsmPid, {coin, 25}),
     gen_fsm:send_all_state_event(FsmPid, stop),
     Result.
 
