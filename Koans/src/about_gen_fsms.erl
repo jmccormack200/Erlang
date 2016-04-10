@@ -30,7 +30,7 @@ while_others_will_trigger_a_state_change() ->
     {ok, FsmPid} = gen_fsm:start(?MODULE, 0, []),
     gen_fsm:sync_send_event(FsmPid, {coin, 100}),
     gen_fsm:sync_send_event(FsmPid, {coin, 25}),
-    Result = __ =:= gen_fsm:sync_send_event(FsmPid, {coin, 25}),
+    Result = "Please make a selection, refunding coin" =:= gen_fsm:sync_send_event(FsmPid, {coin, 25}),
     gen_fsm:send_all_state_event(FsmPid, stop),
     Result.
 
@@ -38,7 +38,7 @@ go_ahead_and_grab_a_soda() ->
     {ok, FsmPid} = gen_fsm:start(?MODULE, 0, []),
     gen_fsm:sync_send_event(FsmPid, {coin, 100}),
     gen_fsm:sync_send_event(FsmPid, {coin, 25}),
-    Result = __ =:= gen_fsm:sync_send_event(FsmPid, {button, "Soda"}),
+    Result = "Vending a Soda" =:= gen_fsm:sync_send_event(FsmPid, {button, "Soda"}),
     gen_fsm:send_all_state_event(FsmPid, stop),
     Result.
 
