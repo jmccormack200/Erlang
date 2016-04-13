@@ -4,23 +4,23 @@
 Koans.About_testing.start_exUnit!
 
 defmodule About_testing do
-    use FakeUnit.Case
+    use ExUnit.Case
     use Koans.About_testing
 
     think "We shall contemplate truth by testing reality, via asserts." do
-        assert __?
+        assert true == true
     end
 
     think "When reality lies, we shall refute truth" do
-        refute __?
+        refute true == false
     end
 
     think "Enlightenment may be more easily achieved with appropriate messages." do
-        assert __?, "This should be true -- Please fix this"
+        assert true == true, "This should be true -- Please fix this"
     end
 
     think "To understand reality, we must compare our expectations against reality." do
-        expected_value = __?
+        expected_value = 2
         actual_value = 1 + 1
 
         assert expected_value == actual_value

@@ -1,0 +1,13 @@
+v2.
+{<<"/home/john/Learning/Erlang/elixir-koans/_build/dev/lib/mix_test_watch/ebin/Elixir.MixTestWatch.Path.beam">>,
+ 'Elixir.MixTestWatch.Path',module,<<"lib/mix_test_watch/paths.ex">>,
+ ['Elixir.Module','Elixir.Kernel.Typespec','Elixir.Kernel','Elixir.String'],
+ [erlang,'Elixir.Regex'],
+ [],nil}.
+{<<"/home/john/Learning/Erlang/elixir-koans/_build/dev/lib/mix_test_watch/ebin/Elixir.Mix.Tasks.Test.Watch.beam">>,
+ 'Elixir.Mix.Tasks.Test.Watch',module,<<"lib/mix/tasks/test/watch.ex">>,
+ ['Elixir.GenServer','Elixir.Module','Elixir.Mix.Task',
+  'Elixir.Kernel.Typespec','Elixir.Kernel','Elixir.Enum','Elixir.String'],
+ ['Elixir.MixTestWatch.Path',erlang,'Elixir.IO','Elixir.Port',timer,
+  'Elixir.String.Chars','Elixir.Application',fs],
+ [],nil}.
