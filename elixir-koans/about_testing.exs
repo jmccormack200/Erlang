@@ -30,10 +30,10 @@ defmodule About_testing do
         is_1_equal_2? = fn -> assert 1 == 2 end
         is_1_greater_than_2? = fn -> assert 1 > 2 end
 
-        message = "Assertion with " <> __? <> " failed"
+        message = "Assertion with " <> "==" <> " failed"
         assert_raise ExUnit.AssertionError, message, is_1_equal_2?
 
-        message = "Assertion with " <> __? <> " failed"
+        message = "Assertion with " <> ">" <> " failed"
         assert_raise ExUnit.AssertionError, message, is_1_greater_than_2?
     end
 end
