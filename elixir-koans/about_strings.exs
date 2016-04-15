@@ -8,19 +8,19 @@ defmodule About_Strings do
 
   think "creating a new string is easy" do
     a_string = "hello world!"
-    assert a_string == __?
+    assert a_string == "hello world!"
   end
 
   think "how long is a piece of string?" do
     a_string = "Hello there"
-    assert String.length(a_string) == __?
+    assert String.length(a_string) == 11
   end
 
   think "what does the string start with?" do
     a_string = "Hello there"
-    assert String.starts_with?(a_string, "H") == __?
-    assert String.starts_with?(a_string, ["Bonjour", "Hello"]) == __?
-    assert String.starts_with?(a_string, ["Bonjour", "Greetings"]) == __?
+    assert String.starts_with?(a_string, "H") == true
+    assert String.starts_with?(a_string, ["Bonjour", "Hello"]) == true
+    assert String.starts_with?(a_string, ["Bonjour", "Greetings"]) == false
   end
 
   think "what does the string end with?" do
