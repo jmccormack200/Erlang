@@ -25,9 +25,9 @@ defmodule About_Strings do
 
   think "what does the string end with?" do
     a_string = "Live long and prosper"
-    assert String.ends_with?(a_string, "prosper") == __?
-    assert String.ends_with?(a_string, ["multiply", "prosper"]) == __?
-    assert String.ends_with?(a_string, ["keep calm"]) == __?
+    assert String.ends_with?(a_string, "prosper") == true
+    assert String.ends_with?(a_string, ["multiply", "prosper"]) == true
+    assert String.ends_with?(a_string, ["keep calm"]) == false
   end
 
   think "does a string contain something?" do
