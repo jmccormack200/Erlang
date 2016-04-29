@@ -34,7 +34,7 @@ defmodule About_Strings do
     a_string = "May the force be with you"
     assert String.contains?(a_string, "force") == true
     assert String.contains?(a_string, ["voyager", "you"]) == true
-    assert String.contains?(a_string, ["prosper"]) == __?
+    assert String.contains?(a_string, ["prosper"]) == false
   end
 
   think "accessing letters by their positions" do
