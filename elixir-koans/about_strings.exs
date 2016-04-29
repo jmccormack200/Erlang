@@ -32,7 +32,7 @@ defmodule About_Strings do
 
   think "does a string contain something?" do
     a_string = "May the force be with you"
-    assert String.contains?(a_string, "force") == __?
+    assert String.contains?(a_string, "force") == true
     assert String.contains?(a_string, ["voyager", "you"]) == __?
     assert String.contains?(a_string, ["prosper"]) == __?
   end
