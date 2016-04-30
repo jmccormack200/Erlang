@@ -39,8 +39,8 @@ defmodule About_Strings do
 
   think "accessing letters by their positions" do
     a_string = "Hello world!"
-    assert String.at(a_string, 2) == __?
-    assert String.at(a_string, 20) == __?
+    assert String.at(a_string, 2) == "l"
+    assert String.at(a_string, 20) == nil
   end
 
   think "slicing a string" do
