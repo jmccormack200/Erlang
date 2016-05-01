@@ -48,8 +48,8 @@ defmodule About_Strings do
     assert String.slice(a_string, 6, 5) == "world"
     assert String.slice(a_string, -3, 6) == "ld!"
     assert String.slice(a_string, 20, 5) == ""
-    assert String.slice(a_string, 4, 0) == __?
-    assert String.slice(a_string, 0..5) == __?
+    assert String.slice(a_string, 4, 0) == ""
+    assert String.slice(a_string, 0..5) == "Hello "
   end
 
   think "capitalization" do
