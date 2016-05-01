@@ -45,8 +45,8 @@ defmodule About_Strings do
 
   think "slicing a string" do
     a_string = "Hello world!"
-    assert String.slice(a_string, 6, 5) == __?
-    assert String.slice(a_string, -3, 6) == __?
+    assert String.slice(a_string, 6, 5) == "world"
+    assert String.slice(a_string, -3, 6) == "ld!"
     assert String.slice(a_string, 20, 5) == __?
     assert String.slice(a_string, 4, 0) == __?
     assert String.slice(a_string, 0..5) == __?
