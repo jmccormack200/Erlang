@@ -1,4 +1,5 @@
-#!/usr/bin/env elixir
+#
+#/usr/bin/env elixir
 
 ExUnit.start
 
@@ -54,12 +55,12 @@ defmodule About_Strings do
 
   think "capitalization" do
     a_string = "hello world!"
-    assert String.capitalize(a_string) == __?
+    assert String.capitalize(a_string) == "Hello world!"
   end
 
   think "upcase" do
     a_string = "hello world!"
-    assert String.upcase(a_string) == __?
+    assert String.upcase(a_string) == "HELLO WORLD!"
   end
 
   think "downcase" do
