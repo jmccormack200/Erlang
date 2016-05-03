@@ -65,7 +65,7 @@ defmodule About_Strings do
 
   think "downcase" do
     a_string = "SPEAK QUIETLY"
-    assert String.downcase(a_string) == __?
+    assert String.downcase(a_string) == "speak quietly"
   end
 
   think "reversing a string" do
