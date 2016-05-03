@@ -75,7 +75,7 @@ defmodule About_Strings do
 
   think "say it again" do
     a_string = "repeat this"
-    assert String.duplicate(a_string, 3) == __?
+    assert String.duplicate(a_string, 3) == "repeat thisrepeat thisrepeat this"
   end
 
   think "stripping on the left" do
