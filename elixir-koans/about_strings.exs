@@ -70,7 +70,7 @@ defmodule About_Strings do
 
   think "reversing a string" do
     a_string = "sdrow sdrawkcab"
-    assert String.reverse(a_string) == __?
+    assert String.reverse(a_string) == "backwards words"
   end
 
   think "say it again" do
