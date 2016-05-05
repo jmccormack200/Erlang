@@ -80,12 +80,12 @@ defmodule About_Strings do
 
   think "stripping on the left" do
     a_string = "  abc  "
-    assert String.lstrip(a_string) == __?
+    assert String.lstrip(a_string) == "abc  "
   end
 
   think "stripping on the left with specific characters" do
     a_string = "$  abc  $"
-    assert String.lstrip(a_string, ?$) == __?
+    assert String.lstrip(a_string, ?$) == "  abc  $"
   end
 
   think "stripping on the right" do
