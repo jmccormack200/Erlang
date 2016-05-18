@@ -90,12 +90,12 @@ defmodule About_Strings do
 
   think "stripping on the right" do
     a_string = "  abc  "
-    assert String.rstrip(a_string) == __?
+    assert String.rstrip(a_string) == "  abc"
   end
 
   think "stripping on the right" do
     a_string = "  abc  $"
-    assert String.rstrip(a_string, ?$) == __?
+    assert String.rstrip(a_string, ?$) == "  abc  "
   end
 
   think "stripping on both sides" do
